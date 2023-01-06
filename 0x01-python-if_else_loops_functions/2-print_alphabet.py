@@ -3,5 +3,5 @@
 
 i = 97
 while i < 123:
-    print(f"chr{(i)}", end=" ")
+    print("{}".format(chr(i)), end="")
     i += 1
