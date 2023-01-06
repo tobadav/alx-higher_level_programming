@@ -1,7 +1,5 @@
 #!/usr/bin/python3
+import string
 
-
-i = 97
-while i < 123:
-    print("{}".format(chr(i)), end="")
-    i += 1
+for i in string.ascii_lowercase:
+    print("{}".format(i), end="")
