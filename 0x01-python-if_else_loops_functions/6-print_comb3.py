@@ -4,5 +4,5 @@ for f in range(0, 10):
         if s > f:
             print("{}{}".format(f, s), end='')
             if int(str(f) + str(s)) != 89:
-                print(end=",")
+                print(end=", ")
 print()
