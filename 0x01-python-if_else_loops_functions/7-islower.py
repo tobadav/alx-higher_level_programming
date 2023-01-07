@@ -4,5 +4,5 @@ def islower(c):
     for i in c:
         if ord(c) >= 97 and ord(c) <= 122:
             return True
-        if ord(c) >= 65 and ord(c) <= 90:
+        elif ord(c) >= 65 and ord(c) <= 90:
             return False
