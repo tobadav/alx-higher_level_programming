@@ -10,5 +10,5 @@ def fizzbuzz():
         elif fizzbuzz % 5 == 0:
             print("Buzz".format(), end=" ")
             continue
-        print("{}".format(fizzbuzz), end=" ")
-        print("".format())
+        else:
+            print("{}".format(fizzbuzz), end=" ")
