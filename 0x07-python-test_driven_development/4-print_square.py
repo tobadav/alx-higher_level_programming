@@ -1,14 +1,45 @@
 #!/usr/bin/python3
 """
-This is the "3-say_my-name" module.
-The 3-say_my_name  module supplies one function, say_my_name.
+This module is composed by a function that prints a square with the character #
 """
 
 
-def say_my_name(first_name, last_name=""):
-    """Prints "My name is" followed by the first name and optional last name"""
-    if type(first_name) is not str:
-        raise TypeError("first_name must be a string")
-    if type(last_name) is not str:
-        raise TypeError("last_name must be a string")
-    print("My name is", first_name, last_name)
+def print_square(size):
+    """ Function that prints a square with the character #
+    Args:
+        size: size of the square printed
+    Returns:
+        No return
+    Raises:
+        TypeError: If size is not an integer number
+    """
+
+    if not isinstance(size, int):
+        raise TypeError("size must be an integer")
+    if size < 0:
+        raise ValueError("size must be >= 0")
+
+    for i in range(size):
+        print("#" * size)#!/usr/bin/python3
+"""
+This module is composed by a function that prints a square with the character #
+"""
+
+
+def print_square(size):
+    """ Function that prints a square with the character #
+    Args:
+        size: size of the square printed
+    Returns:
+        No return
+    Raises:
+        TypeError: If size is not an integer number
+    """
+
+    if not isinstance(size, int):
+        raise TypeError("size must be an integer")
+    if size < 0:
+        raise ValueError("size must be >= 0")
+
+    for i in range(size):
+        print("#" * size)
